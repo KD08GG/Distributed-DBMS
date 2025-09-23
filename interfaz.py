@@ -9,9 +9,9 @@ from tkinter import ttk, messagebox
 def conectar_db():
     try:
         return mysql.connector.connect(
-            host="localhost",
-            user=os.getenv("DB_USER", "root"),
-            password=os.getenv("DB_PASS", "kg1784dg.1234"),
+            host="----",
+            user=os.getenv("DB_USER", "----"),
+            password=os.getenv("DB_PASS", "----"),
             port= "3306",
             database="MyCineMusic24"
         )
@@ -245,4 +245,5 @@ def crear_interfaz():
 
 # Run the interface
 if __name__ == "__main__":
+
     crear_interfaz()
